@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tạo Ảnh Nhân Vật</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;700&family=Dancing+Script:wght@400;700&family=Inter:wght@400;500;600;700;800&family=Lobster&family=Oswald:wght@400;700&family=Pacifico&family=Pattaya&family=Playfair+Display:ital@0;1&family=Srisakdi:wght@400;700&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'system-ui', 'sans-serif'],
+              pacifico: ['Pacifico', 'cursive'],
+              'playfair-display': ['"Playfair Display"', 'serif'],
+              oswald: ['Oswald', 'sans-serif'],
+              'dancing-script': ['"Dancing Script"', 'cursive'],
+              lobster: ['Lobster', 'cursive'],
+              pattaya: ['Pattaya', 'sans-serif'],
+              srisakdi: ['Srisakdi', 'cursive'],
+              'be-vietnam-pro': ['"Be Vietnam Pro"', 'sans-serif'],
+            },
+            colors: {
+              'page-bg': '#880000',
+              'panel-bg': '#FFFFFF',
+              'input-bg': '#F3F4F6',
+              'border-color': '#E5E7EB',
+              'title-red': '#DC2626',
+              'primary-red': '#EF4444',
+              'primary-red-hover': '#DC2626',
+              'primary-red-active': '#B91C1C',
+              'primary-pink': '#DB2777',
+              'toggle-off': '#E5E7EB',
+              'thumb': '#FFFFFF',
+              'body-text': '#1F2937',
+              'muted-text': '#6B7281',
+              'download-bg': '#F9FAFB',
+              'error': '#FF6B6B',
+            },
+            borderRadius: {
+              'xl': '12px',
+            },
+            boxShadow: {
+              'subtle-inner': 'inset 0 1px 2px 0 rgb(0 0 0 / 0.05)',
+              'glow-red': '0 0 8px 0 rgb(239 68 68 / 0.4)',
+              'glow-pink': '0 0 8px 0 rgb(219 39 119 / 0.4)',
+              'md': '0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1)',
+            }
+          }
+        }
+      }
+    </script>
+  <script type="importmap">
+{
+  "imports": {
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.19.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.1.1/",
+    "react/": "https://aistudiocdn.com/react@^19.1.1/",
+    "react": "https://aistudiocdn.com/react@^19.1.1"
+  }
+}
+</script>
+</head>
+  <body class="bg-page-bg">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
